@@ -96,7 +96,7 @@ path:not(.translated-corners path){
 }
 
 .green {
-  color: rgb(34, 195, 245);
+  color:  rgb(29, 136, 100);
 }
 
 .white {
@@ -148,13 +148,13 @@ path:not(.translated-corners path){
   height: 1rem;
   border-radius: .5rem;
   display: block;
-  background-color: rgb(53, 53, 53);
+  background-color:  rgb(29, 136, 100);
   transition: background-color .6s;
   transform-origin: center;
 }
 
 .logo span.blue-bg{
-  background-color: rgb(11, 62, 78);
+  background-color:  rgb(29, 136, 100);
 }
 
 .animus-title-wrapper{
@@ -181,7 +181,7 @@ path:not(.translated-corners path){
   display: block;
   width: .4rem;
   height: .4rem;
-  background-color: rgb(67, 143, 167);
+  background-color: rgb(29, 136, 100);
 }
 
 .animus-title-wrapper h2{
