@@ -1,0 +1,222 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'inter';
+}
+
+img{
+  display: block;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+.card{
+  height: 30rem;
+  width: 17rem;
+  margin: auto;
+}
+
+.content{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+path:not(.translated-corners path){
+  stroke: white;
+  animation: topCornerStrokeAnimation 1s forwards;
+  stroke-dashoffset: 58.5px;
+  stroke-dasharray: 58.5px;
+
+}
+
+.translated-corners path{
+  stroke: white;
+  animation: bottomCornerStrokeAnimation 1s forwards;
+  stroke-dashoffset: 58.5px;
+    stroke-dasharray: 58.5px;
+    will-change: stroke-dasharray;
+}
+@keyframes topCornerStrokeAnimation {
+  from{
+    stroke-dashoffset: 58.5px;
+    stroke-dasharray: 58.5px;
+  }to{
+    stroke-dashoffset: 117px;
+  }
+}
+@keyframes bottomCornerStrokeAnimation {
+  from{
+    stroke-dashoffset: 58.5px;
+    stroke-dasharray: 58.5px;
+  }to{
+    stroke-dashoffset: 117px;
+  }
+  
+}
+
+.app{
+  height: 100vh;
+}
+
+.card{
+  position: relative;
+}
+
+.svg-box{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+}
+
+.svg-box svg{
+  scale: .5;
+}
+
+.translated-corners{
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.number-row{
+  display: flex;
+  justify-content: flex-end;
+  gap: .3rem;
+}
+
+.second{
+  transform: rotateY(180deg);
+}
+
+.green {
+  color: rgb(34, 195, 245);
+}
+
+.white {
+  color: white;
+}
+
+.number-row span{
+  font-size: 1.1rem;
+}
+
+.card--inner-content{
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  height: 100%;
+}
+
+.card--inner-content.second{
+  justify-items: center;
+}
+
+.card--inner-content img{
+  width: 12rem;
+  margin: auto;
+  display: block;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 30deg;
+  position: absolute;
+  bottom: 0;
+  right: 48%;
+}
+
+.vertical-lines{
+  display: grid;
+}
+
+.vertical-lines,
+.logo{
+  gap: .2rem;
+}
+
+.logo span{
+  width: .25rem;
+  height: 1rem;
+  border-radius: .5rem;
+  display: block;
+  background-color: rgb(53, 53, 53);
+  transition: background-color .6s;
+  transform-origin: center;
+}
+
+.logo span.blue-bg{
+  background-color: rgb(11, 62, 78);
+}
+
+.animus-title-wrapper{
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
+.animus-details{
+  display: flex;
+  gap: 3rem;
+  position: relative;
+  margin-top: .5rem;
+}
+
+.animus-details span:nth-child(2){
+  position: relative;
+
+}
+
+.blue-dot{
+  position: absolute;
+  top: 0;
+  left: -.7rem;
+  display: block;
+  width: .4rem;
+  height: .4rem;
+  background-color: rgb(67, 143, 167);
+}
+
+.animus-title-wrapper h2{
+  text-transform: up;
+}
+
+.second img{
+  opacity: .8;
+  filter: contrast(10);
+}
+
+
+.columns-grid{
+  overflow: hidden;
+  display: flex;
+  height: 1.2rem;
+  scale: 1.3;
+}
+
+.columns-grid > div{
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.columns-grid > div div{
+  height: .5rem;
+  width: 1rem;
+  border-bottom: 2px solid white;
+}
+
+.columns-grid > .col-2 div:nth-child(3),
+.columns-grid > .col-3 div:nth-child(3){
+
+  border-bottom: none;
+}
+
+.columns-grid > div div:first-of-type{
+  border-top: 2px solid white;
+}
