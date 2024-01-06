@@ -148,7 +148,7 @@ path:not(.translated-corners path){
   height: 1rem;
   border-radius: .5rem;
   display: block;
-  background-color:  rgb(29, 136, 100);
+  background-color:  rgb(42, 42, 42);
   transition: background-color .6s;
   transform-origin: center;
 }
